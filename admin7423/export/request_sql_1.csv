@@ -1,0 +1,3 @@
+id_request_sql;name;sql;
+"1";"Paramètres avancés > Gestionnaire SQL";"SELECT SQL_CALC_FOUND_ROWS 			 a.* 			 			FROM `pre5275_request_sql` a 			 			 			 			WHERE 1  			 			 			ORDER BY a.`id_request_sql` ASC";
+"2";"Commandes > Statuts";"select * from pre5275_product";
