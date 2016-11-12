@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>paydunya</name>
+	<displayName><![CDATA[PAYDUNYA]]></displayName>
+	<version><![CDATA[0.1]]></version>
+	<description><![CDATA[Acceptez des paiements via Orange Money de mani&egrave;re simple, rapide et s&eacute;curis&eacute;e.]]></description>
+	<author><![CDATA[PAYDUNYA]]></author>
+	<tab><![CDATA[payments_gateways]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>
