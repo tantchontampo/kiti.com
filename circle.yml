@@ -4,7 +4,8 @@ machine:
 
 
 test:
-    false
+  override:
+    - echo "test"
     
 deployment:
   staging:
