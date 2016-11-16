@@ -1,17 +1,25 @@
 language: php
-
 php:
-  - 5.3.3
-  - 5.4
-  - 5.5
-  - 5.6
-  - hhvm
+    - 5.4
+    - 5.6
+    - 7.0
 
-env:
-  - TESTER_PHP_BIN="php-cgi"
-  - TESTER_PHP_BIN="hhvm"
+services:
+  - mysql
+
+matrix:
+    allow_failures:
+        - php: 7.0
+        - php: 7.1
+        - php: hhvm-nightly
   
 notifications:
   email:
     - developers@koomaakiti.com
     
+deploy:
+  provider: heroku
+  api_key:
+    secure: "51e225b3-3350-49e9-8f28-46d2e10bf60f"
+  appname: local-koomaakiti-com  
+  
