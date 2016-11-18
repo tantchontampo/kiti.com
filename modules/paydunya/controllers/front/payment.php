@@ -113,8 +113,7 @@ class PaydunyaPaymentModuleFrontController extends ModuleFrontController
         // Validate order
         $cart = $this->context->cart;
         $currency = $this->context->currency;
-        $currency_order = new Currency($this->context->cart->id_currency);
-        $total = (float)$cart->getConvertOrderTotal(true, Cart::BOTH,$currency_order);
+        $total = (float)$cart->getOrderTotal(true, Cart::BOTH);
         $extra_vars = array(
             '{total_to_pay}' => Tools::displayPrice($total)
         );
@@ -128,9 +127,9 @@ class PaydunyaPaymentModuleFrontController extends ModuleFrontController
 
     private function get_paydunya_args($customer) {
         $cart = $this->context->cart;
-        $currency_order = new Currency($this->context->cart->id_currency);
         $order_cart_id = $cart->id;
-        $order_total_amount = $cart->getConvertOrderTotal(true, Cart::BOTH, $this->context->cart->id_currency);
+        $currency_id = $this->context->cart->id_currency;
+        $order_total_amount = $cart->getConvertOrderTotal(true, Cart::BOTH, $currency_id);
         $ttx = $order_total_amount - $cart->getOrderTotal(false);
         $order_total_tax_amount = $ttx < 0 ? : $ttx;
         $order_cart_secure_key = $cart->secure_key;
