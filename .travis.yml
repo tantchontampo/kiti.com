@@ -6,7 +6,8 @@ php:
 
 services:
   - mysql
-  
+
+script: phpunit
 
 matrix:
     allow_failures:

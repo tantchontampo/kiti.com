@@ -7,8 +7,3 @@ test:
   override:
     - echo "test"
     
-deployment:
-  staging:
-    branch: master
-    heroku:
-      appname: local-koomaakiti-com
