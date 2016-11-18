@@ -43,7 +43,7 @@ class Paydunya extends PaymentModule
             or !$this->registerHook('displayPayment') 
             or !$this->registerHook('displayPaymentReturn') 
             or !Configuration::updateValue('PAYDUNYA_PAYNOW_TEXT', 'Payer avec Orange Money via PAYDUNYA')
-            or !Configuration::updateValue('PAYDUNYA_PAYNOW_DESCRIPTION', 'PAYDUNYA est la passerelle de paiement la plus populaire pour les achats en ligne au Sénégal.')
+            or !Configuration::updateValue('PAYDUNYA_PAYNOW_DESCRIPTION', 'PAYDUNYA est la passerelle de paiement la plus populaire')
             or !Configuration::updateValue('PAYDUNYA_MASTER_KEY', '')
             or !Configuration::updateValue('PAYDUNYA_TEST_PRIVATE_KEY', '')
             or !Configuration::updateValue('PAYDUNYA_TEST_TOKEN', '')
