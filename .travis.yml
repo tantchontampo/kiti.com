@@ -7,7 +7,6 @@ php:
 services:
   - mysql
   
-script: phpunit -v --debug
 
 matrix:
     allow_failures:
