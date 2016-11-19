@@ -95,18 +95,15 @@
 	</div> <!-- end row -->
 	
 	{if !$opc}
-		<div id="ordermsg" class="form-group">
-		
-			<label>
-				<font color="red">Le destinataire devra se pr&eacute;senter au point relais avec une carte d'identit&eacute; valide et le num&eacute;ro de commande. Ce num&eacute;ro vous sera communiqu&eacute; lors de la finalisation de votre commande</font>
-			</label>
-			<br>
-			<br>
+		<div id="ordermsg" class="form-group">			
 			<label>{l s='If you would like to add a comment about your order, please write it in the field below.'}</label>
 			<textarea class="form-control" cols="60" rows="6" name="message">{if isset($oldMessage)}{$oldMessage}{/if}</textarea>
 		</div>
 	{/if}
 </div> <!-- end addresses -->
+<label>
+			<font color="red">Le destinataire devra se pr&eacute;senter au point relais avec une carte d'identit&eacute; valide, le num&eacute;ro de commande et le num&eacute;ro de t&eacute;l&eacute;phone saisi. Le num&eacute;ro de commande vous sera communiqu&eacute; lors de la finalisation de votre achat</font>
+		</label>
 {if !$opc}
 			<p class="cart_navigation clearfix">
 				<input type="hidden" class="hidden" name="step" value="2" />
